@@ -1,0 +1,123 @@
+body {
+    transition: 2s;
+    padding-top: 40px;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+h2 {
+    margin-bottom: 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+body.cast {
+    background: #84cdf5;
+}
+
+.team {
+    position: relative;
+    width: 500px;
+    height: 410px;
+    margin: 0 auto;
+}
+
+.marketer__front {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    background: url("../images/marketer_front.png") center center / contain no-repeat;
+}
+
+.marketer__hands {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+}
+
+.marketer__hands--master {
+    background: url("../images/master_hands.png") center center / contain no-repeat;
+    margin-top: 70px;
+    transition: 1s;
+
+}
+
+.marketer {
+    overflow: hidden;
+    position: absolute;
+    width: 500px;
+    height: 380px;
+    border-bottom: 10px solid #61441E
+}
+
+body.cast .marketer__hands--master {
+    margin-top: 0;
+}
+
+.marketer__hands--support {
+    background: url("../images/support_hands.png") center center / contain no-repeat;
+    margin-top: 170px;
+    transition: 2s;
+}
+
+body.cast .marketer__hands--support {
+    margin-top: 0;
+}
+
+.marketing__cast {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    transition: 1s;
+    opacity: 0;
+}
+
+.marketer__cast--wide {
+    background: url("../images/wide.png") center center / contain no-repeat;
+    -webkit-animation: rotate-counter-clockwise 20s infinite linear;
+}
+body.cast .marketer__cast--wide {
+    opacity: 1;
+}
+.marketer__cast--narrow {
+    background: url("../images/narrow.png") center center / contain no-repeat;
+    -webkit-animation: rotate-clockwise 15s infinite linear;
+}
+body.cast .marketer__cast--narrow {
+    opacity: 1;
+}
+
+@-webkit-keyframes rotate-clockwise {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(359deg);
+    }
+}
+
+@-webkit-keyframes rotate-counter-clockwise {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(-359deg);
+    }
+}
+
+#button {
+    position: relative;
+    z-index: 5;
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+    transition: 1s;
+}
+
+#result {
+    transition: 1s;
+}
