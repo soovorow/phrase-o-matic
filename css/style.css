@@ -21,20 +21,49 @@ body.cast {
 
 .team {
     position: relative;
-    width: 500px;
+    width: 100%;
     height: 410px;
     margin: 0 auto;
 }
 
+
+.marketer {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 380px;
+    border-bottom: 10px solid #61441E
+}
+
+
+@media (max-width: 480px) {
+    .marketer {
+        height: 360px;
+    }
+    .team {
+        height: 380px;
+    }
+}
+
+@media (max-width: 320px) {
+    .marketer {
+        height: 330px;
+    }
+    .team {
+        height: 360px;
+    }
+}
+
+
 .marketer__front {
-    width: 500px;
+    width: 100%;
     height: 500px;
     position: absolute;
     background: url("../images/marketer_front.png") center center / contain no-repeat;
 }
 
 .marketer__hands {
-    width: 500px;
+    width: 100%;
     height: 500px;
     position: absolute;
 }
@@ -46,13 +75,6 @@ body.cast {
 
 }
 
-.marketer {
-    overflow: hidden;
-    position: absolute;
-    width: 500px;
-    height: 380px;
-    border-bottom: 10px solid #61441E
-}
 
 body.cast .marketer__hands--master {
     margin-top: 0;
@@ -69,7 +91,7 @@ body.cast .marketer__hands--support {
 }
 
 .marketing__cast {
-    width: 500px;
+    width: 100%;
     height: 500px;
     position: absolute;
     transition: 1s;
