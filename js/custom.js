@@ -36,7 +36,8 @@ function generateWhatWeNeed() {
             }
 
             body.addClass(action_body_class);
-            button.addClass(action_button_class);
+            button.html('').addClass(action_button_class);
+            result.html('...');
 
             setTimeout(function () {
                 body.removeClass(action_body_class);
